@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0"
+    />
+    <title>Crio Feed</title>
+    <meta name="description" content="Crio Feed Website" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1><span id="rectangle">Cr</span>io News Feed</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Today</h1>
+        <p>The insights you need to keep ahead</p>
+
+        <!-- Accordian -->
+
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="sports-card">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <i class="fa fa-chevron-down"></i> Covid News
+                </button>
+              </h5>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <!-- Caraousel -->
+
+                <div id="corona" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  
+                </div>
+                <a class="carousel-control-prev" href="#corona" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#corona" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                <i class="fa fa-chevron-down"></i> Tech
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <div id="tech" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    
+                  </div>
+                  <a class="carousel-control-prev" href="#tech" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#tech" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                <i class="fa fa-chevron-down"></i> Sports
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <div id="sports" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    
+                  </div>
+                  <a class="carousel-control-prev" href="#sports" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#sports" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #eaeaea;
+}
+
+header {
+  border-bottom: 1px solid #e1e4e8;
+
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+  padding: 1rem 2rem;
+}
+
+h1 {
+  font-size: 23px;
+}
+
+header h1 #rectangle {
+  text-decoration: overline;
+  text-decoration-color: #e537b9;
+  text-decoration-thickness: 6px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.carousel-item {
+  padding: 1rem;
+}
+
+span .carousel-control-prev-icon,
+span .carousel-control-next-icon {
+  color: black;
+}
+
+#accordian .card {
+  background-color: transparent;
+  border: none;
+}
